@@ -1,0 +1,143 @@
+.clothing-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.clothing-title {
+    font-size: 55px;
+    font-weight: normal;
+}
+
+.cards-btn {
+    margin-right: 25px;
+}
+
+.dog {
+    background-color: #EEEBE5;
+    width: 16vw;
+    height: 30vh;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.card-status {
+    border: 1px solid #41403e88;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin: 10px;
+    position: absolute;
+}
+
+.false {
+    display: none;
+}
+
+.dog-img {
+    position: absolute;
+    bottom: -15px;
+    left: 10px;
+    width: 14vw;
+}
+
+.card-title {
+    font-size: 26px;
+    font-weight: normal;
+    margin: 20px 0 5px;
+}
+
+.starts {
+    display: flex;
+    color: #41403e88;
+    gap: 3px;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.card-price {
+    font-size: 26px;
+    font-weight: normal;
+    color: #DEAD6F;
+    margin: 10px 0 0;
+}
+
+.card-btns {
+    display: flex;
+    gap: 5px ;  
+    margin-top: 10px;
+    position: absolute;
+    bottom: 0;
+}
+
+.clothing-card {
+    position: relative;
+    padding-bottom: 6vh;
+}
+
+.card-btn {
+    padding: 10px 20px;
+}
+
+.clothing-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px 10px;
+    margin: 0 auto;
+}
+
+.container-clothes {
+    margin-bottom: 200px;
+}
+
+@media screen and (max-width: 1300px) {
+    .clothing-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .dog {
+        width: 21vw;
+    }
+    .dog-img {
+        left: 30px;
+        width: 16vw;
+    }  
+}
+
+@media screen and (max-width: 1050px) {
+    .dog {
+        width: 21vw;
+        height: 18vh;
+    }
+    .dog-img {
+        left: 30px;
+        width: 16vw;
+    }  
+}
+
+@media screen and (max-width: 850px) {
+    .dog {
+        width: 20vw;
+        height: 15vh;
+    }
+    .dog-img {
+        left: 10px;
+        width: 18vw;
+    }  
+}
+
+@media screen and (max-width: 500px) {
+    .clothing-flex {
+        flex-direction: column;
+    }
+    .clothing-cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .dog {
+        width: 100%;
+        height: 30vh;
+    }
+    .dog-img {
+        left: 10px;
+        width: 90%;
+    }  
+}

@@ -1,0 +1,24 @@
+.container-photos {
+    width: 95%;
+    overflow-x: scroll;
+    padding: 0 10px;
+    cursor: grab;
+    scrollbar-width: none;
+}
+
+.container-photos:active {
+    cursor: grabbing;
+}
+
+.photos {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin: 100px 0;
+    user-select: none;
+}
+
+.photo {
+    width: 280px;
+    pointer-events: none;
+}

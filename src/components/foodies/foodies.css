@@ -1,0 +1,30 @@
+.food {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 310px;
+    width: 10vw;
+    margin: 0 auto;
+}
+
+.food-img {
+    width: 15vw;
+    margin-top: -3vh;
+}
+
+@media screen and (max-width: 850px) {
+    .food-img {
+        width: 15vw;
+        margin-top: -10vh;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .food-img {
+        width: 70%;
+        margin-top: -3vh;
+    }
+    .food {
+        width: 100%;
+    }
+}
